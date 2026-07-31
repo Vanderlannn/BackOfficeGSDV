@@ -1,7 +1,7 @@
 function Autenticacao() {
   return (
     <>
-      <span>Deu certo o codigo</span>
+      <span>Deu certo o codigo..</span>
     </>
   );
 }

@@ -4,9 +4,9 @@ import Autenticacao from "../pages/Autenticacao";
 const RoutesApp = () => {
     return (
         <BrowserRouter>
-        <Routes>
-            <Route path="/" element={<Autenticacao/>} />
-        </Routes>  
+            <Routes>
+                <Route path="/" element={<Autenticacao/>} />
+            </Routes>  
         </BrowserRouter>
     );
 };

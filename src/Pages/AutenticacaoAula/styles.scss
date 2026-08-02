@@ -1,0 +1,81 @@
+.container-aula {
+    background-color: #7c80af;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    .login-container {
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+        border: 1px solid #7c80af;
+        padding: 2rem;
+
+        .login-title {
+            margin: 0;
+            color: #7c80af;
+        }
+
+        .login-subtitle {
+            margin: 0;
+            margin-bottom: 0.5rem;
+            color: #40425ac9;
+        }    
+        
+        .input-container {
+            border-radius: 4px;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 1rem;
+            gap: 0.5rem;
+            width: 80%;
+
+            input {
+                padding: 0.5rem;
+                border: 1px solid #7c80af;
+                border-radius: 4px;
+                width: 100%;
+            }
+        }
+
+        .button-container {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            flex-direction: column;
+
+            .bt-entrar {
+                background-color: #7c80af;
+                color: white;
+                border-radius: 6px;
+                border: none;
+                padding: 0.5rem 1rem;
+                cursor: pointer;
+                width: 100%;
+                }
+
+            .bt-esqueci-senha {
+                background-color: white;
+                color: #7c80af;
+                border-radius: 6px;
+                border: none;
+                padding: 0.5rem 1rem;
+                cursor: pointer;
+                font-size: 0.9rem;
+            }
+        }
+
+        .checkbox-container {
+        color: #7c80af;
+        font-size: 0.9rem;
+        padding: 0.5rem 0;
+        cursor: pointer;
+        }
+    }
+}
+

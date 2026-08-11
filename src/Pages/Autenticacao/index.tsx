@@ -1,42 +1,37 @@
-import "./styles.scss"
+import './styles.scss';
 
-function Autenticacao () {
+function Autenticacao() {
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    // Aqui você pode adicionar a lógica para lidar com o envio do formulário, como autenticação do usuário
 
-    const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-        event.preventDefault();
-        // Aqui você pode adicionar a lógica para lidar com o envio do formulário, como autenticação do usuário
+    console.log('Formulário enviado!');
+  };
 
+  return (
+    <div className="container">
+      <form onSubmit={handleSubmit} className="login-container">
+        <h1 className="login-title">Autenticação </h1>
+        <h2 className="login-subtitle">Back Office</h2>
 
-        console.log("Formulário enviado!");
-    }
+        <div className="input-container">
+          <input type="e-mail" placeholder="E-mail" required />
+          <input type="password" placeholder="Senha" required />
+        </div>
 
-    return (
-            <div className="container">
-                    <form onSubmit={handleSubmit} className="login-container">
+        <div className="button-container">
+          <button type="submit">Entrar</button>
+          <button type="button">Esqueci a senha</button>
+        </div>
 
-                        <h1 className="login-title">Autenticação </h1>
-                        <h2 className="login-subtitle">Back Office</h2>
+        <div className="checkbox-container">
+          <input type="checkbox" id="lembre-me" />
 
-                        <div className="input-container">
-                            <input type="e-mail" placeholder="E-mail" required />
-                            <input type="password" placeholder="Senha" required />
-                        </div>
-                        
-                        <div className="button-container">
-                            <button type="submit">Entrar</button>
-                            <button type="button">Esqueci a senha</button>
-                        </div>
-
-                        <div className="checkbox-container">
-                            <input type="checkbox" id="lembre-me" />
-                            
-                            <span >lembrar minha senha</span>
-                        </div>
-                    </form>      
-            </div>
-
-
-    );
+          <span>lembrar minha senha</span>
+        </div>
+      </form>
+    </div>
+  );
 }
 
 export default Autenticacao;
